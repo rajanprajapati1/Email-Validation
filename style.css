@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #35ef13;
+    display: grid;
+    place-content: center;
+
+}
+.login-page{
+    width: 370px;
+    height: 70vh;
+    background-color: white;
+    border-radius: 6px;
+}
+.login-page h2{
+    text-align: center;
+    padding: 25px;
+    letter-spacing: 1px;
+}
+.login-page form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 75px 0 75px;
+}
+.login-page label{
+    padding: 5px 0 ;
+    font-weight: 500;
+}
+.login-page input{
+    padding: 8px 9px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    position: relative;
+    border: 1px solid grey;
+    border-radius: 2px;
+    outline: none;
+}
+/* }
+input:invalid {
+    animation: shake 0.1s ease;
+    
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(10px);
+        border: 1px solid red;
+    }
+    100% {
+        transform: translateX(-10px);
+        border: 1px solid red;
+    }
+} */
+
+#password{
+  border: none;
+}
+#ps{
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 2px;
+
+}
+#show{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: -15px;
+    margin-top: 8px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;cursor: pointer;
+}
+.login-page #submit{
+    margin-top: 25px;
+    border: 1px solid white;
+    background-color: #42b92d;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px;
+    padding: 7px 0 ;
+    border-radius: 3px;
+}
+#submit:hover{
+    background-color: #35ef13;
+    
+}
+.login-page span{
+    text-align: center;
+    color: black;
+    margin-top: 15px;
+}
+.login-page #pas:hover{
+    text-decoration: underline;
+}
+.login-page #create{
+    margin-top: 3px;
+}
+.login-page #i{
+    margin-top: 2px;
+
+}@media (max-width: 768px) {
+    
+    .login-page {
+        padding: 10px;
+    width: 290px;
+      height: auto;
+    }
+  
+    .login-page form {
+    padding: 0 20px 0 20px;
+
+    }
+  
+#ps{
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 2px;
+    margin-top: 0px;
+}
+#show{
+    margin-left: 15px;
+}
+    .login-page #submit {
+      width: 100%;
+    }
+#pas ,#i ,#create{
+    font-size: 15px;
+    margin-top: 5px;
+}
+  }
